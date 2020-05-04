@@ -1,0 +1,345 @@
+num1 = 10
+num2 = 20
+result = num1 + num2
+print(result)
+
+'''
+def wish():
+ print("Good Morning")
+wish()
+
+sid = int(input("Enter sid:"))
+sname = input("Enter sname:")
+smarks = float(input("Enter smarks:"))
+print("sid = %d \nsname = %s \nsmarks = %f"%(sid,sname,smarks))
+print("sid = {0} \nsname = {1} \nsmarks = {2}".format(sid,sname,smarks))
+print(f"sid = {sid} \nsname = {sname} \nsmarks = {smarks}") '''
+
+'''x,y = 62,22
+if (x > y):
+	print("Hi students Good Morning")'''
+
+'''
+if 10>20:
+	print("Good Morning")
+	print("Hi Students")
+else:
+	print("Good Evening")
+	print("HI ratan sir")'''
+
+'''if "ratan":
+	print("Good Morning")
+else:
+	print("Good Evening")'''
+
+'''x= range(10)
+for n in x:
+    print(n)'''
+'''for x in range(10):
+	if x==5:
+		break
+	print(x)'''
+
+'''for x in range(10):
+	if x==5:
+		continue
+	print(x)'''
+
+'''day = input("Enter Day:")
+if day.upper()=='MONDAY' or day.upper()=='TUESDAY':
+   print(" YOU GOT 2% OF DISCOUNT")
+elif day.upper()=='WEDNESDAY' or day.upper()=='THURSDAY' or day.upper()=='FRIDAY':
+    print(" YOU GOT 3% OF DISCOUNT")
+elif day.upper()=='SATURDAY' or day.upper()=='SUNDAY':
+    print(" YOU GOT 5% OF DISCOUNT")
+else:
+    print("PLEASE ENTER THE VALID DAY")'''
+
+'''username = input("enter the username:")
+password = input("enter the password:")
+if username =="ratan" and password == "anu":
+	print("Login success")
+else:
+	print("Login Fail")'''
+
+'''def wish():						# delcaration
+			print("Good Morning")  # implementation
+wish()'''
+
+'''def wish(name):
+       print("Good Morning...",name)
+wish("rohini")'''
+
+'''pincode=int(input("Enter Pin: "))
+if pincode==1234:
+	print("login successful")
+else:
+	print("invalid pin")
+	for pincode in range(1,4):
+		pincode=int(input("Enter Pin: "))
+		if pincode==1234:
+			print("login successful")
+		elif pincode!=1234:
+			print("invalid pin")
+	else:
+		print("your max attempts for today are exceeded please try tomorrow")'''
+
+'''def emp_details(eid,ename,esal):
+	print(eid,ename,esal)
+
+emp_details(111,"rohini",10000.45)'''
+
+'''name = input("Enter your name:")
+vowels = ""
+consonants = ""
+for x in name:
+	if x=='a' or x=='e' or x=='i' or x=='o' or x=='u':
+		vowels += x
+	else:
+		consonants += x
+print("Vowels in ur name:",vowels,"\nConsonants in ur name:",consonants)'''
+
+
+
+
+'''def outer():
+	s="rohini"
+	def inner1():
+		s="durga"
+	def inner2():
+		nonlocal s
+		s="anu"
+	def inner3():
+		global s
+		s="sravya"
+	#Function calling [outer function code]
+	print(s)
+	inner1()
+	print(s)
+	inner2()
+	print(s)
+	inner3()
+	print(s)
+
+outer()
+print(s)'''
+
+'''y = 10
+
+
+def outer():
+    x = 42
+
+    def inner():
+        nonlocal x
+        x = 65
+        global y
+        y = 43
+
+    print(x)
+    inner()
+    print(x)
+
+
+outer()
+print(y)'''
+
+'''name = "rohini"
+	# 0 1 2 3 4 6 7
+
+print(name[0])
+print(name[2])
+
+print(name[2:5])
+print(name[2:])
+print(name[:5])
+print(name[:])
+
+
+print(name[0])
+print(name[-1])
+
+print(name[-7:-2])
+print(name[:-2])
+print(name[-7:])
+print(name[:])
+
+print(name[-7:-2:2])
+print(name[:-2:2])
+print(name[-7::2])
+
+print(name[-2:-7:-3])
+print(name[:-7:-3])
+print(name[-2::-3])
+print(name[::-3])
+
+print(name[2:-2])
+print(name[-3:3:-1])
+print(name[2:-2:2])'''
+
+''' str = "   rohini   "
+print(len(str))
+
+print(str)
+print(str.strip())
+print(len(str.strip()))'''
+
+'''name = "@@@rohini$$$$"
+print(name.lstrip("@"))
+print(name.rstrip("$"))
+print(name.lstrip("@").rstrip("$"))'''
+
+'''name = "rohini"
+print(name.index('r'))
+print(name.rindex('o'))'''
+
+'''name = 'Rohini K'
+first_name, last_name = name.split()
+print(last_name, first_name)'''
+
+'''data = [10,20,30,40]
+for x in data:
+	print(x)
+
+for x in range(data[2]):
+	print(x)'''
+
+'''names = ["ratan","ranu","raju","rani"]
+for x in names[2]:
+	print(x)'''
+'''data = [10,20,30,40]
+for x in data:
+	print(x)'''
+'''l1 = [10,20,33,40,50,60]
+l2 = []
+l3 = []
+for x in l1 :
+    if x < 30:
+        l2.append(x)
+    else:
+        l3.append(x)
+print(l2)
+print(l3)'''
+
+'''names = ["ratan","anu","sravya","naresh"]
+names.sort()
+print(names)'''
+
+'''x=(1,2,3,4)
+print (x[1])
+len(x)'''
+
+'''a=('hi','')* 5
+print(a)'''
+
+'''A={2,3,4}
+B={3,5,6}
+x=A.union(B)
+print(x)'''
+
+import numpy as np
+a=np.array([1,2,3])
+'''b= np.array([4,5,6])
+print(a)
+print(b)'''
+
+'''a=np.zeros((3,4))
+print(a)'''
+
+'''b=np.arange(10,25,5)
+print(b)'''
+
+'''c=np.random.random((3,3))
+print(c)'''
+
+'''a.shape =((3,2))'''
+
+'''import pandas as pd
+import numpy as np
+
+#Create a series with 100 random numbers
+s = pd.Series(np.random.randn(4))
+print ("The axes are:")
+print (s.axes)'''
+
+
+'''import pandas as pd
+import numpy as np
+
+#Create a series with 4 random numbers
+s = pd.Series(np.random.randn(4))
+print (s)
+
+print ("The actual data series is:")
+print(s.values)'''
+
+
+'''import pandas as pd
+import numpy as np
+
+#Create a Dictionary of series
+d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
+   'Age':pd.Series([25,26,25,23,30,29,23]),
+   'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8])}
+
+#Create a DataFrame
+df = pd.DataFrame(d)
+print ("Our data series is:")
+print(df)'''
+
+import pandas as pd
+import numpy as np
+
+''''# Create a Dictionary of series
+d = {'Name': pd.Series(['Tom', 'James', 'Ricky', 'Vin', 'Steve', 'Smith', 'Jack']),
+     'Age': pd.Series([25, 26, 25, 23, 30, 29, 23]),
+     'Rating': pd.Series([4.23, 3.24, 3.98, 2.56, 3.20, 4.6, 3.8])}
+
+# Create a DataFrame
+df = pd.DataFrame(d)
+print("The transpose of the data series is:")
+print(df.T)'''
+
+#Create a Dictionary of series
+d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
+   'Age':pd.Series([25,26,25,23,30,29,23]),
+   'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8])}
+
+'''#Create a DataFrame
+df = pd.DataFrame(d)
+print ("The data types of each column are:")
+print (df.dtypes)'''
+
+df = pd.DataFrame(d)
+print ("Our data frame is:")
+print(df)
+print ("The first two rows of the data frame is:")
+print (df.head(2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
