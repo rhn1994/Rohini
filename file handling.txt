@@ -1,0 +1,13 @@
+#Read excel using pandas
+
+import pandas as pd
+df = pd.read_excel(r'C:\Users\r.m.krishnamoorthy\Desktop\Python_activity codeeeeeeeee\input.xlsx')
+print(df.columns)
+df.head()
+
+#Read excel using pandas
+import pandas as pd
+df1 = pd.DataFrame({'Names':['Andreas', 'George', 'Steve',
+                           'Sarah', 'Joanna', 'Hanna'],
+                  'Age':[21, 22, 20, 19, 18, 23]})
+df1.to_excel(r'C:\Users\r.m.krishnamoorthy\Desktop\Python_activity codeeeeeeeee\NamesAndAges.xlsx')
