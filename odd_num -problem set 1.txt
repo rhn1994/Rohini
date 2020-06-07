@@ -1,0 +1,17 @@
+1. Write a program that examines three variables—x, y, and z— and prints the largest odd number among them. 
+If none of them are odd, it should print a message to that effect.
+
+a=[2,3,4,5,6,7,8,9]
+
+odd=[]
+even=[]
+
+for i in a:
+      if i% 2 ==0;
+	  even.append(i)
+	  else 
+	  odd.append(i)
+even.sort() #sort ascending order
+odd.sort() 
+maxeven=even[-1] #returns last index num
+maxodd =odd[-1]

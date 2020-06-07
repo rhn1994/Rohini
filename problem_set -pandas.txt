@@ -1,0 +1,8 @@
+import pandas as pd
+chipo = pd.read_excel(r'C:\Users\r.m.krishnamoorthy\Desktop\Python_activity codeeeeeeeee\chipote.xlsx')
+print(chipo.columns)
+chipo.iloc[0:3]
+
+df1 = chipo.sort_values("item_name", axis = 0, descending = True, 
+                 inplace = True, na_position ='last') 
+print(df1)
