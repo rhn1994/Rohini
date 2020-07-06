@@ -1,0 +1,90 @@
+# Python provides a built-in function called len that returns the length of a string, 
+so the value of len('Cigna') is 5. Write a function named right_justify that takes a string named s as a parameter 
+and prints the string with enough leading spaces so that the last letter of the string is in column 70 of the display.
+
+x= len('Cigna')#returns no of characters as'5'
+def right_justify(s)
+string_length=len(s)+70 
+string_revised=s.rjust(string_length)
+print(string_revised)
+
+right_justify('cigna')
+
+# sqrtproblem set
+
+
+a=int(input("Enter an integer "))
+
+root=0
+
+pwr=0
+
+
+
+while root<=a:        
+
+    root+=1            
+
+    while pwr<6:         
+
+        pwr+=1             
+
+        if root**pwr==a:     
+
+            print(root,pwr)
+
+    pwr=0
+
+#String is in
+
+def isIn(str1,str2):
+
+    if str1 in str2:
+
+        return True
+
+    else:
+
+        return False
+
+
+
+string1=input("enter first string: ")
+
+string2=input("enter second string: ")
+
+
+
+print(isIn(string1,string2))
+
+#Write a program that examines three variables—x, y, and z— and prints the largest odd number among them. 
+If none of them are odd, it should print a message to that effect.
+
+a=[2,3,4,5,6,7,8,9]
+
+odd=[]
+even=[]
+
+for i in a:
+      if i% 2 ==0;
+	  even.append(i)
+	  else 
+	  odd.append(i)
+even.sort() #sort ascending order
+odd.sort() 
+maxeven=even[-1] #returns last index num
+maxodd =odd[-1]
+
+# Write a program that asks the user to input 10 integers, and then prints the largest odd number that was entered. 
+If no odd number was entered, it should print a message to that effect.
+
+def my_solution():
+        numbers = [input('Enter a value: ') for i in range(10)]
+        odds = [y for y in numbers if y % 2 != 0]
+        if odds:
+            return max(odds)
+        else:
+            return 'All declared variables have even values.'
+my_solution()
+
+
